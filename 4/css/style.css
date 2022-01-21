@@ -1,0 +1,57 @@
+:root{
+    --color1: #f7be04;
+    --color2: #6d0019;
+    --color3: #ffcf94;
+}
+header{
+    padding: 50px;
+}
+
+footer{
+    padding: 25px;
+
+    background: var(--color1);
+    background: -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+    background: -webkit-linear-gradient(left,  var(--color1) 0%,var(--color2) 100%);
+    background: linear-gradient(to right,  var(--color1) 0%,var(--color2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color2),GradientType=1 ); 
+}
+header{
+   /* */
+    background: url(../4.jpg);
+    filter: url(../4.jpg);
+    background-size: contain;
+}
+
+.btn-itd{
+    float: left;
+    height: auto;
+    width: 150px;
+    display: block;
+    margin: 20px auto;
+    color: var(--bs-white);
+    background-color: var(--color1);
+}
+.btn-itd:hover{
+    color: var(--bs-white);
+    background-color: var(--color2);
+}
+
+.input-group-text{
+    width: 250px;
+    background-color: var(--color3);
+}
+
+form{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.my_row{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+li{
+    color: var(--color2);
+}

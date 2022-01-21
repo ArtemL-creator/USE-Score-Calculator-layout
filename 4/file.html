@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Калькулятор баллов ЕГЭ</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center text-dark">Калькулятор баллов ЕГЭ</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <form>
+            <p>Введите полученные Вами баллы:</p>
+            <div class="row my_row">
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text" id="math">Математика</span>
+                        <input type="number" min="0" max="100" class="form-control" id="math">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text" id="math-pro">Математика профильная</span>
+                        <input type="number" min="0" max="100" value="86" class="form-control" id="math-pro">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text" id="math">Русский язык</span>
+                        <input type="number" min="0" max="100" value="91" class="form-control" id="rus">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row my_row">
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text" id="infor">Информатика и ИКТ</span>
+                        <input type="number" min="0" max="100" value="89" class="form-control" id="infor">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text" id="phis">Физика</span>
+                        <input type="number" min="0" max="100" class="form-control" id="phis">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text" id="chem">Химия</span>
+                        <input type="number" min="0" max="100" class="form-control" id="chem">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row my_row">
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text" id="bio">Биология</span>
+                        <input type="number" min="0" max="100" class="form-control" id="bio">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text" id="geog">География</span>
+                        <input type="number" min="0" max="100" class="form-control" id="geog">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text" id="liter">Литература</span>
+                        <input type="number" min="0" max="100" class="form-control" id="liter">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row my_row">
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text" id="hist">История</span>
+                        <input type="number" min="0" max="100" class="form-control" id="hist">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text" id="soci">Обществознание</span>
+                        <input type="number" min="0" max="100" class="form-control" id="soci">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text" id="for_l">Иностранный язык</span>
+                        <input type="number" min="0" max="100" class="form-control" id="for_l">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <p>Тип имеющегося образования:</p>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="Radio1" checked>
+                            <label class="form-check-label" for="Radio1">Среднее общее</label>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="Radio2">
+                            <label class="form-check-label" for="Radio2">Среднее профессиональное</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="itd_button"></div>
+                <a href="#geet" class="btn btn-itd btn-sm text-uppercase">Узнать шансы</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="geet">
+        <ol type="1">
+            <li>ТвГУ | Тверь | 02.03.02 <a href="http://127.0.0.1:5500/file.html">Информатика и компьютерные
+                    науки</a><br>
+                <p class="chance">Вероятность поступления 97%</p>
+            </li><br>
+
+            <li>ТвГТУ | Тверь | 08.03.01 <a href="http://127.0.0.1:5500/file.html">Производство и применение
+                    строительных материалов, изделий и конструкций</a><br>
+                <p class="chance">Вероятность поступления 96,4%</p>
+            </li><br>
+
+
+            <li>2 вуза | Тверь | 09.03.03 <a href="http://127.0.0.1:5500/file.html">Прикладная информатика в
+                    экономике</a><br>
+                <p class="chance">Вероятность поступления 96,3%</p>
+            </li><br>
+
+            <li>ТвГТУ | Тверь | 09.03.04 <a href="http://127.0.0.1:5500/file.html">Разработка
+                    программно-информационных систем</a><br>
+                <p class="chance">Вероятность поступления 94,1%</p>
+            </li><br>
+        </ol>
+    </div>
+
+
+    <footer>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
